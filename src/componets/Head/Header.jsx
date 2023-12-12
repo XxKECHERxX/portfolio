@@ -8,6 +8,7 @@ import FigmaIcon from '../icons/FigmaIcon'
 import VScodeIcon from '../icons/VScodeIcon'
 import LikedinIcon from '../icons/LinkedinIcon'
 import GitIcon from '../icons/GitIcon'
+import TelegramIcon from '../icons/TelegramIcon'
 
 const Header = () => {
   const logosLang = [
@@ -46,7 +47,7 @@ const Header = () => {
             </div>
             <div className="banner__signboard-links">
               <a
-                href="https://github.com/XxKECHERxX"
+                href="https://www.linkedin.com/in/anatolii-zhludov"
                 style={{ border: 'none' }}
               >
                 <LikedinIcon />
@@ -56,6 +57,9 @@ const Header = () => {
                 style={{ border: 'none' }}
               >
                 <GitIcon />
+              </a>
+              <a href="https://t.me/xKECHERx" style={{ border: 'none' }}>
+                <TelegramIcon />
               </a>
             </div>
           </div>

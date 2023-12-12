@@ -3,8 +3,12 @@ const NavBar = () => {
     <nav className="navig">
       <div className="logo">AZ</div>
       <ul className="menu">
-        <li>Проекты</li>
-        <li>Контакты</li>
+        <li>
+          <a href="#project">Проекты</a>
+        </li>
+        <li>
+          <a href="#contacts">Контакты</a>
+        </li>
       </ul>
     </nav>
   )

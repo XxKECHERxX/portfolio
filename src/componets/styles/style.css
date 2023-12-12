@@ -113,7 +113,7 @@ header .banner__signboard {
 }
 header .banner__signboard-links {
   display: grid;
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(3, max-content);
   column-gap: 20px;
 }
 
@@ -203,7 +203,7 @@ header .banner__signboard-links {
 .contacts__links {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, max-content);
   column-gap: 50px;
 }
 
