@@ -22,7 +22,7 @@ const AllGym = () => {
             </p>
             <p>
               Сайт <br />{' '}
-              <a href="xxkecherxx.github.io/future-furnitures/">
+              <a href="https://xxkecherxx.github.io/future-furnitures/">
                 github.io/future-furnitures
               </a>
             </p>

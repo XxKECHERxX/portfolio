@@ -4,7 +4,7 @@ import backPicAllGym from '../images/allgym-back-description.jpg'
 
 const AllGym = () => {
   return (
-    <section id='project'>
+    <section id="project">
       <div className="projects">
         <div className="showcase">
           <div className="showcase__gradient" />

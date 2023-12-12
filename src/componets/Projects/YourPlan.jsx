@@ -31,7 +31,9 @@ const AllGym = () => {
             </p>
             <p>
               Сайт <br />{' '}
-              <a href="xxkecherxx.github.io/yourplan/">github.io/yourplan</a>
+              <a href="https://xxkecherxx.github.io/yourplan/">
+                github.io/yourplan
+              </a>
             </p>
             <p>
               Проект в GitHub <br />{' '}

@@ -2,14 +2,14 @@ import footerBanner from '../images/footer-banner.jpg'
 
 const Footer = () => {
   return (
-    <footer id='contacts'>
+    <footer id="contacts">
       <div className="container">
         <img src={footerBanner} alt="footer banner" />
         <div className="contacts">
           <div className="contacts__links">
             <p>
               Likendin <br />{' '}
-              <a href="www.linkedin.com/in/anatolii-zhludov">
+              <a href="https://www.linkedin.com/in/anatolii-zhludov">
                 linkedin.com/anatolii-zhludov
               </a>
             </p>
