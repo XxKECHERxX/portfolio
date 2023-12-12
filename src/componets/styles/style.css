@@ -1,0 +1,215 @@
+.contacts, .description, .showcase, .navig .menu, .navig .logo, .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase__gradient {
+  background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 26.75%);
+}
+
+.container {
+  position: relative;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.projects {
+  max-width: 1150px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  border-radius: 10px;
+}
+
+h3 {
+  color: #fff;
+  font-weight: 500;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.7764705882);
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  border-bottom: 2px solid #ff0000;
+}
+
+.navig {
+  display: flex;
+  max-width: 1150px;
+  align-items: center;
+  margin: 20px auto;
+}
+.navig .logo {
+  font-family: "Montserrat";
+  font-size: 32px;
+  color: #fff;
+  width: 70px;
+  height: 50px;
+  padding: 5px;
+  margin-left: 10px;
+  font-weight: 500;
+  border: 2px solid #fff;
+}
+.navig .menu {
+  font-family: "Montserrat";
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.7764705882);
+  flex-direction: row;
+  width: 300px;
+  margin: 20px 30px;
+  padding: 0;
+  list-style: none;
+}
+.navig .menu li {
+  margin: auto;
+  cursor: pointer;
+  border: 2px solid #000;
+}
+.navig .menu li:hover {
+  border-bottom: 2px solid #ff0000;
+  color: #fff;
+}
+
+header .logos {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  width: 50px;
+  margin: 0 20px;
+  padding: 10px 0;
+  border: 2px solid rgba(255, 255, 255, 0.2117647059);
+  border-radius: 10px;
+}
+header .logos__icon {
+  justify-self: center;
+}
+header .banner {
+  position: relative;
+}
+header .banner__back-picture {
+  margin-left: 10px;
+}
+header .banner__signboard {
+  position: absolute;
+  display: grid;
+  grid-template-rows: 1fr max-content;
+  row-gap: 20px;
+  right: 90px;
+  bottom: 40px;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2117647059);
+  background-color: #000;
+  font-family: "Montserrat";
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.7764705882);
+}
+header .banner__signboard-links {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 20px;
+}
+
+.showcase {
+  position: relative;
+}
+.showcase__gradient {
+  width: 600px;
+  height: 602px;
+  scale: 0.8;
+  animation: spin-anim 5s ease 0s 1 normal forwards;
+}
+.showcase__website {
+  position: absolute;
+  z-index: -10;
+  scale: 0.8;
+  animation: spin-anim 5s ease 0s 1 normal forwards;
+}
+.showcase__back-circle {
+  position: absolute;
+  z-index: -20;
+}
+.showcase__back-circle_spin-left {
+  animation: rotate-center-left 20s linear infinite both;
+}
+.showcase__back-circle_spin-right {
+  animation: rotate-center-right 20s linear infinite both;
+}
+
+.description {
+  position: relative;
+}
+.description__background {
+  width: 470px;
+  height: 560px;
+}
+.description__about {
+  position: absolute;
+  width: 400px;
+  padding: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.7764705882);
+  border-radius: 10px;
+  background-color: #000;
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7764705882);
+}
+
+@keyframes spin-anim {
+  0% {
+    opacity: 0;
+    transform: rotate(-540deg) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+@keyframes rotate-center-left {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotate-center-right {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.contacts {
+  position: absolute;
+  z-index: 10;
+  width: auto;
+  padding: 0 20px;
+  height: 150px;
+  background-color: #000;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7764705882);
+}
+.contacts__links {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+}
+
+.App {
+  max-width: 1440px;
+  margin: 40px auto;
+}
+
+/*# sourceMappingURL=style.css.map */

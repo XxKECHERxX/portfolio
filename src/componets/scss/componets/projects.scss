@@ -1,0 +1,83 @@
+.showcase {
+  @extend %position-center;
+  position: relative;
+
+  &__gradient {
+    @extend %shadow-gradient;
+    width: 600px;
+    height: 602px;
+    scale: 0.8;
+    animation: spin-anim 5s ease 0s 1 normal forwards;
+  }
+
+  &__website {
+    position: absolute;
+    z-index: -10;
+    scale: 0.8;
+    animation: spin-anim 5s ease 0s 1 normal forwards;
+  }
+
+  &__back-circle {
+    position: absolute;
+    z-index: -20;
+
+    &_spin-left {
+      animation: rotate-center-left 20s linear infinite both;
+    }
+    &_spin-right {
+      animation: rotate-center-right 20s linear infinite both;
+    }
+  }
+}
+
+.description {
+  @extend %position-center;
+  position: relative;
+
+  &__background {
+    width: 470px;
+    height: 560px;
+  }
+
+  &__about {
+    position: absolute;
+    width: 400px;
+    padding: 25px;
+    border: 2px solid map-get($colors, 'white-grey');
+    border-radius: 10px;
+    background-color: map-get($colors, 'black');
+    @include text-style(
+      map-get($colors, 'white-grey'),
+      map-get($font-size, 'sm')
+    );
+  }
+}
+
+@keyframes spin-anim {
+  0% {
+    opacity: 0;
+    transform: rotate(-540deg) scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+@keyframes rotate-center-left {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotate-center-right {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

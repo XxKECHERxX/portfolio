@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  max-width: 1150px;
+  margin: auto;
+  @extend %position-center;
+}
+
+.projects {
+  max-width: 1150px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  border-radius: 10px;
+}
+
+h3 {
+  color: map-get($colors, 'white');
+  font-weight: 500;
+}
+
+a {
+  color: map-get($colors, 'white-grey');
+  text-decoration: none;
+
+  &:hover {
+    color: map-get($colors, 'white');
+    border-bottom: 2px solid map-get($colors, 'red');
+  }
+}

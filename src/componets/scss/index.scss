@@ -1,0 +1,12 @@
+@import './common';
+@import './componets/navig.scss';
+@import './componets/header.scss';
+@import './componets/projects.scss';
+@import './componets/footer.scss';
+
+.App {
+  max-width: 1440px;
+  margin: 40px auto;
+}
+
+// sass --watch './src/componets/scss/index.scss:./src/componets/styles/style.css'

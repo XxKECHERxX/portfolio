@@ -1,0 +1,5 @@
+@mixin text-style($color, $font-size) {
+  font-family: 'Montserrat';
+  font-size: $font-size;
+  color: $color;
+}

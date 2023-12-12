@@ -1,0 +1,47 @@
+header {
+  .logos {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    width: 50px;
+    margin: 0 20px;
+    padding: 10px 0;
+    border: 2px solid map-get($colors, 'grey');
+    border-radius: 10px;
+
+    &__icon {
+      justify-self: center;
+    }
+  }
+
+  .banner {
+    position: relative;
+
+    &__back-picture {
+      margin-left: 10px;
+    }
+
+    &__signboard {
+      position: absolute;
+      display: grid;
+      grid-template-rows: 1fr max-content;
+      row-gap: 20px;
+      right: 90px;
+      bottom: 40px;
+      padding: 25px;
+      border-radius: 10px;
+      border: 2px solid map-get($colors, 'grey');
+      background-color: map-get($colors, 'black');
+      @include text-style(
+        map-get($colors, 'white-grey'),
+        map-get($font-size, 'md')
+      );
+    }
+
+    &__signboard-links {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      column-gap: 20px;
+    }
+  }
+}
