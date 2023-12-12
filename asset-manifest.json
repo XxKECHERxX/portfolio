@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.bba2e8d5.css",
+    "main.js": "/portfolio/static/js/main.04564acf.js",
+    "static/media/head-banner.jpg": "/portfolio/static/media/head-banner.eeb69ec3342aa64030d6.jpg",
+    "static/media/footer-banner.jpg": "/portfolio/static/media/footer-banner.3c859289781163ae733f.jpg",
+    "static/media/ff-back-description.jpg": "/portfolio/static/media/ff-back-description.a233e03bce87c727bce0.jpg",
+    "static/media/yourplan-back-description.jpg": "/portfolio/static/media/yourplan-back-description.8ecb953e74b5439f9f67.jpg",
+    "static/media/allgym-back-description.jpg": "/portfolio/static/media/allgym-back-description.a8e755f7c1930d1f91e6.jpg",
+    "static/media/yourplan-laptop.jpg": "/portfolio/static/media/yourplan-laptop.58b1fb4e47cd89a9d532.jpg",
+    "static/media/allgym-laptop.jpg": "/portfolio/static/media/allgym-laptop.91838be22b7cd1d68344.jpg",
+    "static/media/triangle.jpg": "/portfolio/static/media/triangle.3f76b2c8010ff4a26b37.jpg",
+    "static/media/ff-laptop.jpg": "/portfolio/static/media/ff-laptop.89a7db0f40217ffa6325.jpg",
+    "static/media/squar.jpg": "/portfolio/static/media/squar.858de77980108b2fce08.jpg",
+    "static/media/circle.jpg": "/portfolio/static/media/circle.683241410a92427a05ea.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.bba2e8d5.css.map": "/portfolio/static/css/main.bba2e8d5.css.map",
+    "main.04564acf.js.map": "/portfolio/static/js/main.04564acf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bba2e8d5.css",
+    "static/js/main.04564acf.js"
+  ]
+}
