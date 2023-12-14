@@ -58,7 +58,7 @@ const Header = () => {
               >
                 <GitIcon />
               </a>
-              <a href="https://t.me/xKECHERx" style={{ border: 'none' }}>
+              <a href="https://t.me/zhludov_a" style={{ border: 'none' }}>
                 <TelegramIcon />
               </a>
             </div>

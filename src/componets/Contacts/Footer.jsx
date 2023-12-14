@@ -18,7 +18,7 @@ const Footer = () => {
               <a href="https://github.com/XxKECHERxX">github.com/XxKECHERxX</a>
             </p>
             <p>
-              Telegram <br /> <a href="https://t.me/xKECHERx">t.me/xKECHERx</a>
+              Telegram <br /> <a href="https://t.me/zhludov_a">t.me/xKECHERx</a>
             </p>
             <p>
               Почта <br /> zhludovanatolii@gmail.com
