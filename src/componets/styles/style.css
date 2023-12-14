@@ -1,4 +1,4 @@
-.contacts, .description, .showcase, .navig .menu, .navig .logo, .container {
+.description, .showcase, .navig .menu, .navig .logo, .container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,11 +15,11 @@
 }
 
 .projects {
-  max-width: 1150px;
-  margin: 100px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1150px;
+  margin: 100px auto;
 }
 
 img {
@@ -188,25 +188,6 @@ header .banner__signboard-links {
     transform: rotate(360deg);
   }
 }
-.contacts {
-  position: absolute;
-  z-index: 10;
-  width: auto;
-  padding: 0 20px;
-  height: 150px;
-  background-color: #000;
-  border-radius: 10px;
-  font-family: "Montserrat";
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.7764705882);
-}
-.contacts__links {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(3, max-content);
-  column-gap: 50px;
-}
-
 .App {
   max-width: 1440px;
   margin: 40px auto;

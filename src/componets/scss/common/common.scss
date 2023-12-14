@@ -1,16 +1,16 @@
 .container {
+  @extend %position-center;
   position: relative;
   max-width: 1150px;
   margin: auto;
-  @extend %position-center;
 }
 
 .projects {
-  max-width: 1150px;
-  margin: 100px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1150px;
+  margin: 100px auto;
 }
 
 img {

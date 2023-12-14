@@ -3,3 +3,24 @@
   font-size: $font-size;
   color: $color;
 }
+
+@mixin desktop {
+  @media screen and (max-width: map-get($breakpoints, 'xxl')) {
+    @content;
+  }
+}
+@mixin laptop {
+  @media screen and (max-width: map-get($breakpoints, 'xl')) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: map-get($breakpoints, 'md')) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: map-get($breakpoints, 'sm')) {
+    @content;
+  }
+}
