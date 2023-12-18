@@ -1,21 +1,21 @@
-// .contacts {
-//   @extend %position-center;
-//   position: absolute;
-//   z-index: 10;
-//   width: auto;
-//   padding: 0 20px;
-//   height: 150px;
-//   background-color: map-get($colors, 'black');
-//   border-radius: 10px;
-//   @include text-style(
-//     map-get($colors, 'white-grey'),
-//     map-get($font-size, 'sm')
-//   );
+.contacts {
+  @extend %position-center;
+  position: absolute;
+  z-index: 10;
+  width: auto;
+  padding: 0 20px;
+  height: 150px;
+  background-color: map-get($colors, 'black');
+  border-radius: 10px;
+  @include text-style(
+    map-get($colors, 'white-grey'),
+    map-get($font-size, 'sm')
+  );
 
-//   &__links {
-//     display: grid;
-//     grid-template-rows: 1fr 1fr;
-//     grid-template-columns: repeat(3, max-content);
-//     column-gap: 50px;
-//   }
-// }
+  &__links {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 50px;
+  }
+}
