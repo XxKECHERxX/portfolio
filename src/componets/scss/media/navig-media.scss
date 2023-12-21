@@ -6,13 +6,13 @@
 
 @include laptop {
   .navig {
-    max-width: auto;
-    margin: 20px 7.5vw;
+    max-width: 86vw;
   }
 }
 
 @include mobile {
   .navig {
+    max-width: auto;
     margin: 20px 5vw;
     .menu {
       @include text-style(

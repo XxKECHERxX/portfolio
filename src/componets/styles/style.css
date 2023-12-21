@@ -104,7 +104,7 @@ header .banner__back-picture {
 header .banner__signboard {
   position: absolute;
   display: grid;
-  grid-template-rows: 1fr max-content;
+  grid-template-rows: repeat(3, max-content);
   row-gap: 20px;
   right: 90px;
   bottom: 40px;
@@ -269,12 +269,12 @@ header .banner__signboard-links {
 }
 @media screen and (max-width: 1050px) {
   .navig {
-    max-width: auto;
-    margin: 20px 7.5vw;
+    max-width: 86vw;
   }
 }
 @media screen and (max-width: 580px) {
   .navig {
+    max-width: auto;
     margin: 20px 5vw;
   }
   .navig .menu {
@@ -317,7 +317,8 @@ header .banner__signboard-links {
   header .logos {
     position: absolute;
     z-index: 10;
-    left: 0px;
+    margin: 0 10px;
+    left: 20px;
     top: 10px;
   }
   header .banner__back-picture {
@@ -326,9 +327,10 @@ header .banner__signboard-links {
     height: 420px;
   }
   header .banner__signboard {
-    width: 210px;
+    width: 65vw;
+    row-gap: 10px;
     z-index: 10;
-    right: 25px;
+    right: 15px;
     bottom: 20px;
   }
 }
@@ -388,28 +390,28 @@ header .banner__signboard-links {
 }
 @media screen and (max-width: 790px) {
   .showcase__gradient {
-    width: 430px;
-    height: 432px;
+    width: 460px;
+    height: 462px;
   }
   .showcase__website img {
-    width: 430px;
-    height: 430px;
+    width: 460px;
+    height: 460px;
   }
   .showcase__back-circle img {
-    width: 430px;
-    height: 430px;
+    width: 460px;
+    height: 460px;
   }
   .description__background {
-    width: 450px;
+    width: 550px;
     height: 420px;
   }
   .description__background img {
-    width: 450px;
+    width: 550px;
     height: 420px;
   }
   .description__about {
     padding: 7px 25px;
-    width: 420px;
+    width: 500px;
   }
 }
 @media screen and (max-width: 580px) {
@@ -426,16 +428,15 @@ header .banner__signboard-links {
     height: 375px;
   }
   .description__background {
-    width: 350px;
+    width: 85vw;
     height: 500px;
   }
   .description__background img {
-    width: 350px;
+    width: 85vw;
     height: 500px;
   }
   .description__about {
-    padding: 7px 25px;
-    width: 320px;
+    width: 80vw;
     padding: 4px 25px;
   }
 }

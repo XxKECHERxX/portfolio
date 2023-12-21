@@ -45,7 +45,8 @@
     .logos {
       position: absolute;
       z-index: 10;
-      left: 0px;
+      margin: 0 10px;
+      left: 20px;
       top: 10px;
     }
     .banner {
@@ -55,9 +56,10 @@
         height: 420px;
       }
       &__signboard {
-        width: 210px;
+        width: 65vw;
+        row-gap: 10px;
         z-index: 10;
-        right: 25px;
+        right: 15px;
         bottom: 20px;
       }
     }

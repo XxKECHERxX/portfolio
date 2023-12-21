@@ -24,7 +24,7 @@ header {
     &__signboard {
       position: absolute;
       display: grid;
-      grid-template-rows: 1fr max-content;
+      grid-template-rows: repeat(3, max-content);
       row-gap: 20px;
       right: 90px;
       bottom: 40px;

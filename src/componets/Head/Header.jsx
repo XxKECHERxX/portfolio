@@ -40,11 +40,9 @@ const Header = () => {
             alt="banner header"
           />
           <div className="banner__signboard">
-            <div>
-              Анатолий Жлудов
-              <br />
-              Frontend разработчик
-            </div>
+            <div>Анатолий Жлудов</div>
+            {/* <br /> */}
+            <div>Frontend-разработчик</div>
             <div className="banner__signboard-links">
               <a
                 href="https://www.linkedin.com/in/anatolii-zhludov"
