@@ -1,14 +1,33 @@
 import allGym from '../images/allgym-laptop.jpg'
 import circle from '../images/circle.jpg'
 import backPicAllGym from '../images/allgym-back-description.jpg'
+import { useEffect, useState } from 'react'
 
 const AllGym = () => {
+  const [animEffect, setAnimEffect] = useState('')
+
+  const handleAnimSpin = () => {
+    if (window.scrollY > 500 || window.innerWidth < 1050) {
+      setAnimEffect('_spin-scale')
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleAnimSpin)
+
+    return () => window.removeEventListener('scroll', handleAnimSpin)
+  }, [])
+
   return (
     <section id="project">
       <div className="projects">
         <div className="showcase">
-          <div className="showcase__gradient" />
-          <div className="showcase__website">
+          <div
+            className={`${'showcase__gradient'} + ${`showcase__gradient${animEffect}`}`}
+          />
+          <div
+            className={`${'showcase__website'} + ${`showcase__website${animEffect}`}`}
+          >
             <img src={allGym} alt="AllGym" />
           </div>
           <div className="showcase__back-circle showcase__back-circle_spin-left">

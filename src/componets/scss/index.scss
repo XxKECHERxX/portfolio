@@ -3,10 +3,14 @@
 @import './componets/header.scss';
 @import './componets/projects.scss';
 @import './componets/footer.scss';
+@import './media/common-media.scss';
+@import './media/navig-media.scss';
+@import './media/header-media.scss';
+@import './media/projects-media.scss';
+@import './media/footer-media.scss';
 
 .App {
-  max-width: 1440px;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
 // sass --watch './src/componets/scss/index.scss:./src/componets/styles/style.css'

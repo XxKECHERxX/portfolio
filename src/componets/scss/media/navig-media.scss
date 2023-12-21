@@ -1,0 +1,26 @@
+@include desktop {
+  .navig {
+    max-width: 1000px;
+  }
+}
+
+@include laptop {
+  .navig {
+    max-width: auto;
+    margin: 20px 7.5vw;
+  }
+}
+
+@include mobile {
+  .navig {
+    margin: 20px 5vw;
+    .menu {
+      @include text-style(
+        map-get($colors, 'white-grey'),
+        map-get($font-size, 'sm')
+      );
+      width: 220px;
+      margin: 20px 20px;
+    }
+  }
+}

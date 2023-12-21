@@ -30,7 +30,7 @@
     li {
       margin: auto;
       cursor: pointer;
-      border: 2px solid map-get($colors, 'black');
+      border: 2px solid #000;
 
       &:hover {
         border-bottom: 2px solid map-get($colors, 'red');

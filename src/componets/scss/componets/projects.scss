@@ -7,14 +7,22 @@
     width: 600px;
     height: 602px;
     scale: 0.8;
-    animation: spin-anim 5s ease 0s 1 normal forwards;
+    opacity: 0;
+
+    &_spin-scale {
+      animation: spin-anim 5s ease 0s 1 normal forwards;
+    }
   }
 
   &__website {
     position: absolute;
     z-index: -10;
     scale: 0.8;
-    animation: spin-anim 5s ease 0s 1 normal forwards;
+    opacity: 0;
+
+    &_spin-scale {
+      animation: spin-anim 5s ease 0s 1 normal forwards;
+    }
   }
 
   &__back-circle {
@@ -46,6 +54,7 @@
     border: 2px solid map-get($colors, 'white-grey');
     border-radius: 10px;
     background-color: map-get($colors, 'black');
+    word-wrap: break-word;
     @include text-style(
       map-get($colors, 'white-grey'),
       map-get($font-size, 'sm')

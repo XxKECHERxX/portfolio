@@ -1,21 +1,26 @@
+.footer {
+  &__banner {
+    position: absolute;
+    z-index: -10;
+  }
+}
 .contacts {
   @extend %position-center;
-  position: absolute;
-  z-index: 10;
-  width: auto;
-  padding: 0 20px;
-  height: 150px;
-  background-color: map-get($colors, 'black');
   border-radius: 10px;
-  @include text-style(
-    map-get($colors, 'white-grey'),
-    map-get($font-size, 'sm')
-  );
+  width: 1150px;
+  height: 210px;
 
   &__links {
+    position: absolute;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, max-content);
     grid-template-columns: repeat(3, max-content);
     column-gap: 50px;
+    padding: 8px 25px;
+    background-color: #000;
+    @include text-style(
+      map-get($colors, 'white-grey'),
+      map-get($font-size, 'sm')
+    );
   }
 }

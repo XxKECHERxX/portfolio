@@ -1,0 +1,65 @@
+@include desktop {
+  header {
+    .logos {
+      min-width: 50px;
+    }
+    .banner {
+      &__back-picture {
+        width: 900px;
+      }
+
+      &__signboard {
+        right: 80px;
+        bottom: 35px;
+      }
+    }
+  }
+}
+@include laptop {
+  header {
+    .banner {
+      &__back-picture {
+        width: 75vw;
+        height: 400px;
+      }
+
+      &__signboard {
+        right: 50px;
+        bottom: 35px;
+      }
+    }
+  }
+}
+@include tablet {
+  header {
+    .banner {
+      &__signboard {
+        right: 30px;
+        bottom: 30px;
+      }
+    }
+  }
+}
+@include mobile {
+  header {
+    .logos {
+      position: absolute;
+      z-index: 10;
+      left: 0px;
+      top: 10px;
+    }
+    .banner {
+      &__back-picture {
+        margin-left: 0px;
+        width: 90vw;
+        height: 420px;
+      }
+      &__signboard {
+        width: 210px;
+        z-index: 10;
+        right: 25px;
+        bottom: 20px;
+      }
+    }
+  }
+}

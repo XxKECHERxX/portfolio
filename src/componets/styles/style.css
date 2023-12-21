@@ -20,6 +20,11 @@
   align-items: center;
   max-width: 1150px;
   margin: 100px auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.projects_reverse {
+  flex-direction: row-reverse;
 }
 
 img {
@@ -48,7 +53,7 @@ a:hover {
 }
 .navig .logo {
   font-family: "Montserrat";
-  font-size: 32px;
+  font-size: 2rem;
   color: #fff;
   width: 70px;
   height: 50px;
@@ -59,7 +64,7 @@ a:hover {
 }
 .navig .menu {
   font-family: "Montserrat";
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.7764705882);
   flex-direction: row;
   width: 300px;
@@ -108,7 +113,7 @@ header .banner__signboard {
   border: 2px solid rgba(255, 255, 255, 0.2117647059);
   background-color: #000;
   font-family: "Montserrat";
-  font-size: 24px;
+  font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.7764705882);
 }
 header .banner__signboard-links {
@@ -124,12 +129,18 @@ header .banner__signboard-links {
   width: 600px;
   height: 602px;
   scale: 0.8;
+  opacity: 0;
+}
+.showcase__gradient_spin-scale {
   animation: spin-anim 5s ease 0s 1 normal forwards;
 }
 .showcase__website {
   position: absolute;
   z-index: -10;
   scale: 0.8;
+  opacity: 0;
+}
+.showcase__website_spin-scale {
   animation: spin-anim 5s ease 0s 1 normal forwards;
 }
 .showcase__back-circle {
@@ -157,8 +168,9 @@ header .banner__signboard-links {
   border: 2px solid rgba(255, 255, 255, 0.7764705882);
   border-radius: 10px;
   background-color: #000;
+  word-wrap: break-word;
   font-family: "Montserrat";
-  font-size: 18px;
+  font-size: 1.125rem;
   color: rgba(255, 255, 255, 0.7764705882);
 }
 
@@ -188,28 +200,294 @@ header .banner__signboard-links {
     transform: rotate(360deg);
   }
 }
-.contacts {
+.footer__banner {
   position: absolute;
-  z-index: 10;
-  width: auto;
-  padding: 0 20px;
-  height: 150px;
-  background-color: #000;
-  border-radius: 10px;
-  font-family: "Montserrat";
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.7764705882);
-}
-.contacts__links {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(3, max-content);
-  column-gap: 50px;
+  z-index: -10;
 }
 
+.contacts {
+  border-radius: 10px;
+  width: 1150px;
+  height: 210px;
+}
+.contacts__links {
+  position: absolute;
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  grid-template-columns: repeat(3, max-content);
+  column-gap: 50px;
+  padding: 8px 25px;
+  background-color: #000;
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.7764705882);
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+  .projects {
+    max-width: 1000px;
+    margin: 80px auto;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .container {
+    max-width: 85vw;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 85vw;
+    margin: 50px auto;
+  }
+}
+@media screen and (max-width: 790px) {
+  .container {
+    max-width: 85vw;
+  }
+  .projects {
+    max-width: 85vw;
+    margin: 50px auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .navig {
+    max-width: 1000px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .navig {
+    max-width: auto;
+    margin: 20px 7.5vw;
+  }
+}
+@media screen and (max-width: 580px) {
+  .navig {
+    margin: 20px 5vw;
+  }
+  .navig .menu {
+    font-family: "Montserrat";
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.7764705882);
+    width: 220px;
+    margin: 20px 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header .logos {
+    min-width: 50px;
+  }
+  header .banner__back-picture {
+    width: 900px;
+  }
+  header .banner__signboard {
+    right: 80px;
+    bottom: 35px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  header .banner__back-picture {
+    width: 75vw;
+    height: 400px;
+  }
+  header .banner__signboard {
+    right: 50px;
+    bottom: 35px;
+  }
+}
+@media screen and (max-width: 790px) {
+  header .banner__signboard {
+    right: 30px;
+    bottom: 30px;
+  }
+}
+@media screen and (max-width: 580px) {
+  header .logos {
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+    top: 10px;
+  }
+  header .banner__back-picture {
+    margin-left: 0px;
+    width: 90vw;
+    height: 420px;
+  }
+  header .banner__signboard {
+    width: 210px;
+    z-index: 10;
+    right: 25px;
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .showcase__gradient {
+    width: 500px;
+    height: 502px;
+  }
+  .showcase__website img {
+    width: 500px;
+    height: 500px;
+  }
+  .showcase__back-circle img {
+    width: 500px;
+    height: 500px;
+  }
+  .description__background {
+    width: 440px;
+    height: 470px;
+  }
+  .description__background img {
+    width: 440px;
+    height: 470px;
+  }
+  .description__about {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .showcase__gradient {
+    width: 500px;
+    height: 502px;
+  }
+  .showcase__website img {
+    width: 500px;
+    height: 500px;
+  }
+  .showcase__back-circle img {
+    width: 500px;
+    height: 500px;
+  }
+  .description {
+    margin-top: 30px;
+  }
+  .description__background {
+    width: 650px;
+    height: 390px;
+  }
+  .description__background img {
+    width: 650px;
+    height: 390px;
+  }
+  .description__about {
+    padding: 7px 25px;
+    width: 620px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .showcase__gradient {
+    width: 430px;
+    height: 432px;
+  }
+  .showcase__website img {
+    width: 430px;
+    height: 430px;
+  }
+  .showcase__back-circle img {
+    width: 430px;
+    height: 430px;
+  }
+  .description__background {
+    width: 450px;
+    height: 420px;
+  }
+  .description__background img {
+    width: 450px;
+    height: 420px;
+  }
+  .description__about {
+    padding: 7px 25px;
+    width: 420px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .showcase__gradient {
+    width: 375px;
+    height: 377px;
+  }
+  .showcase__website img {
+    width: 375px;
+    height: 375px;
+  }
+  .showcase__back-circle img {
+    width: 375px;
+    height: 375px;
+  }
+  .description__background {
+    width: 350px;
+    height: 500px;
+  }
+  .description__background img {
+    width: 350px;
+    height: 500px;
+  }
+  .description__about {
+    padding: 7px 25px;
+    width: 320px;
+    padding: 4px 25px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .footer__banner img {
+    width: 1000px;
+  }
+  .contacts {
+    width: 1000px;
+  }
+  .contacts__links p {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .footer__banner img {
+    width: 780px;
+  }
+  .contacts {
+    width: 780px;
+  }
+  .contacts__links {
+    grid-template-rows: repeat(2, max-content);
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 30px;
+  }
+  .contacts__links p {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .footer__banner img {
+    width: 560px;
+    height: 250px;
+  }
+  .contacts {
+    width: 560px;
+    height: 250px;
+  }
+  .contacts__links {
+    grid-template-rows: repeat(4, max-content);
+    grid-template-columns: repeat(1, max-content);
+    column-gap: 20px;
+  }
+  .contacts__links p {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .footer__banner img {
+    width: 90vw;
+    height: 250px;
+  }
+  .contacts {
+    width: 90vw;
+    height: 250px;
+  }
+}
 .App {
-  max-width: 1440px;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
 /*# sourceMappingURL=style.css.map */

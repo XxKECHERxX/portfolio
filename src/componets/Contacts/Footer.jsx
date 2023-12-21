@@ -4,7 +4,9 @@ const Footer = () => {
   return (
     <footer id="contacts">
       <div className="container">
-        <img src={footerBanner} alt="footer banner" />
+        <div className="footer__banner">
+          <img src={footerBanner} alt="footer banner" />
+        </div>
         <div className="contacts">
           <div className="contacts__links">
             <p>

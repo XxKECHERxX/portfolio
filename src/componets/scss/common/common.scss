@@ -11,6 +11,12 @@
   align-items: center;
   max-width: 1150px;
   margin: 100px auto;
+  padding: 0 10px;
+  overflow: hidden;
+
+  &_reverse {
+    flex-direction: row-reverse;
+  }
 }
 
 img {

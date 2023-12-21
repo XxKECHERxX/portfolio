@@ -1,0 +1,153 @@
+@include desktop {
+  .showcase {
+    &__gradient {
+      width: 500px;
+      height: 502px;
+    }
+
+    &__website {
+      img {
+        width: 500px;
+        height: 500px;
+      }
+    }
+
+    &__back-circle {
+      img {
+        width: 500px;
+        height: 500px;
+      }
+    }
+  }
+
+  .description {
+    &__background {
+      width: 440px;
+      height: 470px;
+      img {
+        width: 440px;
+        height: 470px;
+      }
+    }
+
+    &__about {
+      width: 400px;
+    }
+  }
+}
+@include laptop {
+  .showcase {
+    &__gradient {
+      width: 500px;
+      height: 502px;
+    }
+
+    &__website {
+      img {
+        width: 500px;
+        height: 500px;
+      }
+    }
+
+    &__back-circle {
+      img {
+        width: 500px;
+        height: 500px;
+      }
+    }
+  }
+
+  .description {
+    margin-top: 30px;
+    &__background {
+      width: 650px;
+      height: 390px;
+      img {
+        width: 650px;
+        height: 390px;
+      }
+    }
+
+    &__about {
+      padding: 7px 25px;
+      width: 620px;
+    }
+  }
+}
+@include tablet {
+  .showcase {
+    &__gradient {
+      width: 430px;
+      height: 432px;
+    }
+
+    &__website {
+      img {
+        width: 430px;
+        height: 430px;
+      }
+    }
+
+    &__back-circle {
+      img {
+        width: 430px;
+        height: 430px;
+      }
+    }
+  }
+
+  .description {
+    &__background {
+      width: 450px;
+      height: 420px;
+      img {
+        width: 450px;
+        height: 420px;
+      }
+    }
+
+    &__about {
+      padding: 7px 25px;
+      width: 420px;
+    }
+  }
+}
+@include mobile {
+  .showcase {
+    &__gradient {
+      width: 375px;
+      height: 377px;
+    }
+
+    &__website {
+      img {
+        width: 375px;
+        height: 375px;
+      }
+    }
+
+    &__back-circle {
+      img {
+        width: 375px;
+        height: 375px;
+      }
+    }
+  }
+
+  .description {
+    &__background {
+      width: 350px;
+      height: 500px;
+      img {
+        width: 350px;
+        height: 500px;
+      }
+    }
+
+    &__about {
+      padding: 7px 25px;
+      width: 320px;
+      padding: 4px 25px;
+    }
+  }
+}

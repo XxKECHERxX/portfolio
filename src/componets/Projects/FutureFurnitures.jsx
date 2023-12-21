@@ -1,15 +1,44 @@
 import futFurnitures from '../images/ff-laptop.jpg'
 import triangle from '../images/triangle.jpg'
 import backPicFF from '../images/ff-back-description.jpg'
+import { useEffect, useState } from 'react'
 
-const AllGym = () => {
+const FutureFurnitures = () => {
+  const [animEffect, setAnimEffect] = useState('')
+
+  const handleAnimSpin = () => {
+    if (window.scrollY > 800) {
+      setAnimEffect('_spin-scale')
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleAnimSpin)
+
+    return () => window.removeEventListener('scroll', handleAnimSpin)
+  }, [])
+
   return (
     <section>
-      <div className="projects">
+      <div className="projects projects_reverse">
+        <div className="showcase">
+          <div
+            className={`${'showcase__gradient'} + ${`showcase__gradient${animEffect}`}`}
+          />
+          <div
+            className={`${'showcase__website'} + ${`showcase__website${animEffect}`}`}
+          >
+            <img src={futFurnitures} alt="FutureFurnitures" />
+          </div>
+          <div className="showcase__back-circle showcase__back-circle_spin-left">
+            <img src={triangle} alt="Rotate circle" />
+          </div>
+        </div>
         <div className="description">
           <div className="description__background">
             <img src={backPicFF} alt="Black hole" />
           </div>
+
           <div className="description__about">
             <h3>
               Проект <br />
@@ -34,18 +63,9 @@ const AllGym = () => {
             </p>
           </div>
         </div>
-        <div className="showcase">
-          <div className="showcase__gradient" />
-          <div className="showcase__website">
-            <img src={futFurnitures} alt="AllGym" />
-          </div>
-          <div className="showcase__back-circle showcase__back-circle_spin-right">
-            <img src={triangle} alt="Rotate circle" />
-          </div>
-        </div>
       </div>
     </section>
   )
 }
 
-export default AllGym
+export default FutureFurnitures

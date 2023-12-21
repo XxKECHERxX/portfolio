@@ -1,0 +1,75 @@
+@include desktop {
+  .footer {
+    &__banner {
+      img {
+        width: 1000px;
+      }
+    }
+  }
+  .contacts {
+    width: 1000px;
+    &__links {
+      p {
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .footer {
+    &__banner {
+      img {
+        width: 780px;
+      }
+    }
+  }
+  .contacts {
+    width: 780px;
+    &__links {
+      grid-template-rows: repeat(2, max-content);
+      grid-template-columns: repeat(2, max-content);
+      column-gap: 30px;
+      p {
+        margin: 5px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .footer {
+    &__banner {
+      img {
+        width: 560px;
+        height: 250px;
+      }
+    }
+  }
+  .contacts {
+    width: 560px;
+    height: 250px;
+    &__links {
+      grid-template-rows: repeat(4, max-content);
+      grid-template-columns: repeat(1, max-content);
+      column-gap: 20px;
+      p {
+        margin: 5px;
+      }
+    }
+  }
+}
+@include tablet {
+  .footer {
+    &__banner {
+      img {
+        width: 90vw;
+        height: 250px;
+      }
+    }
+  }
+  .contacts {
+    width: 90vw;
+    height: 250px;
+  }
+}

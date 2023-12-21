@@ -1,15 +1,34 @@
 import yourPlan from '../images/yourplan-laptop.jpg'
 import squar from '../images/squar.jpg'
 import backPicYourPlan from '../images/yourplan-back-description.jpg'
+import { useEffect, useState } from 'react'
 
-const AllGym = () => {
+const YourPlan = () => {
+  const [animEffect, setAnimEffect] = useState('')
+
+  const handleAnimSpin = () => {
+    if (window.scrollY > 1300) {
+      setAnimEffect('_spin-scale')
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleAnimSpin)
+
+    return () => window.removeEventListener('scroll', handleAnimSpin)
+  }, [])
+
   return (
     <section>
       <div className="projects">
         <div className="showcase">
-          <div className="showcase__gradient" />
-          <div className="showcase__website">
-            <img src={yourPlan} alt="AllGym" />
+          <div
+            className={`${'showcase__gradient'} + ${`showcase__gradient${animEffect}`}`}
+          />
+          <div
+            className={`${'showcase__website'} + ${`showcase__website${animEffect}`}`}
+          >
+            <img src={yourPlan} alt="YourPlan" />
           </div>
           <div className="showcase__back-circle showcase__back-circle_spin-left">
             <img src={squar} alt="Rotate circle" />
@@ -48,4 +67,4 @@ const AllGym = () => {
   )
 }
 
-export default AllGym
+export default YourPlan
