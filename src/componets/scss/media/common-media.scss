@@ -32,3 +32,12 @@
     margin: 50px auto;
   }
 }
+@include mobile {
+  .container {
+    max-width: 100vw;
+  }
+
+  .projects {
+    max-width: 100vw;
+  }
+}
